@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-09T06:59:52.204Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="O2PxcVG24X2HPrgkyOkR" version="20.8.17" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-09T07:06:59.775Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="p0iSr6AzwCiMoS8iTcOh" version="20.8.17" type="github">
   <diagram name="第 1 页" id="JsC-sPZwaS2pL8XHtRWc">
-    <mxGraphModel dx="1707" dy="2451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1619" dy="2323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -123,6 +123,59 @@
         </mxCell>
         <mxCell id="ErUn-88AJgNuBOqfLNrV-33" value="createReducer" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-110" y="-20" width="1130" height="1810" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-34" target="ErUn-88AJgNuBOqfLNrV-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-41" value="addCase, addMatcher, addDefaultCase" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-40">
+          <mxGeometry x="-0.28" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-34" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="250" y="2310" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-35" value="Props" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="2180" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-36" value="builderCallback: (builder: ActionReducerMapBuilder&amp;lt;S&amp;gt;) =&amp;gt; void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ErUn-88AJgNuBOqfLNrV-35">
+          <mxGeometry y="30" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-39" target="ErUn-88AJgNuBOqfLNrV-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-44" value="builder" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-43">
+          <mxGeometry x="-0.2667" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-39" value="builder" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="250" y="2490" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-42" target="ErUn-88AJgNuBOqfLNrV-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="2780" />
+              <mxPoint x="300" y="2780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-47" value="return" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-46">
+          <mxGeometry x="-0.2848" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-42" value="builderCallback(builder)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="2650" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-45" target="ErUn-88AJgNuBOqfLNrV-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-45" value="[actionsMap, actionMatchers, defaultCaseReducer]" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="155" y="2800" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-48" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="250" y="2950" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
