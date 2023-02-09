@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-09T06:56:56.994Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="UBS7qMRX2oh7MiO-nonw" version="20.8.17" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-09T06:59:52.204Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="O2PxcVG24X2HPrgkyOkR" version="20.8.17" type="github">
   <diagram name="第 1 页" id="JsC-sPZwaS2pL8XHtRWc">
-    <mxGraphModel dx="792" dy="1154" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1707" dy="2451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -120,6 +120,9 @@
         </mxCell>
         <mxCell id="ErUn-88AJgNuBOqfLNrV-29" value="[mapOrBuilderCallback, actionMatchers, defaultCaseReducer]" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="630" y="490" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-33" value="createReducer" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="-20" width="1130" height="1810" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
