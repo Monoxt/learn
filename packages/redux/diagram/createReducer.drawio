@@ -1,1 +1,127 @@
-<mxfile host="app.diagrams.net" modified="2023-02-09T05:42:25.214Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.17" etag="SO-TruYqVAVrZ7P0E6uZ" type="github"><diagram name="第 1 页" id="JsC-sPZwaS2pL8XHtRWc">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-09T06:56:56.994Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="UBS7qMRX2oh7MiO-nonw" version="20.8.17" type="github">
+  <diagram name="第 1 页" id="JsC-sPZwaS2pL8XHtRWc">
+    <mxGraphModel dx="792" dy="1154" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-1" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="350" y="270" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-1" target="ErUn-88AJgNuBOqfLNrV-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-3" value="Props" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="60" width="550" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-4" value="initialState: S | (() =&amp;gt; S)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ErUn-88AJgNuBOqfLNrV-3">
+          <mxGeometry y="30" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-5" value="mapOrBuilderCallback: CaseReducers&amp;lt;S, any&amp;gt; | ((builder: ActionReducerMapBuilder&amp;lt;S&amp;gt;) =&amp;gt; void)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ErUn-88AJgNuBOqfLNrV-3">
+          <mxGeometry y="60" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-6" value="actionMatchers: ReadonlyActionMatcherDescriptionCollection&amp;lt;S&amp;gt; = []" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ErUn-88AJgNuBOqfLNrV-3">
+          <mxGeometry y="90" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-7" value="defaultCaseReducer?: CaseReducer&amp;lt;S&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ErUn-88AJgNuBOqfLNrV-3">
+          <mxGeometry y="120" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-8" target="ErUn-88AJgNuBOqfLNrV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-12" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-11">
+          <mxGeometry x="-0.2519" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-8" target="ErUn-88AJgNuBOqfLNrV-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-31" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-30">
+          <mxGeometry x="-0.2296" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-8" value="typeof mapOrBuilderCallback === &#39;function&#39;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="430" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-10" target="ErUn-88AJgNuBOqfLNrV-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-15" value="[actionsMap, finalActionMatchers, finalDefaultCaseReducer]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-14">
+          <mxGeometry x="-0.2667" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-10" value="executeReducerBuilderCallback(mapOrBuilderCallback)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="740" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-16" target="ErUn-88AJgNuBOqfLNrV-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-19" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-17">
+          <mxGeometry x="-0.2583" y="3" relative="1" as="geometry">
+            <mxPoint x="-3" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-16" target="ErUn-88AJgNuBOqfLNrV-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-22" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ErUn-88AJgNuBOqfLNrV-20">
+          <mxGeometry x="-0.2485" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-16" value="isStateFunction(initialState)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="940" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-18" target="ErUn-88AJgNuBOqfLNrV-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-18" value="getInitialState = () =&amp;gt; freezeDraftable(initialState())" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1260" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="1390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-21" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;getInitialState = () =&amp;gt; freezeDraftable(initialState)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="650" y="970" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-26" target="ErUn-88AJgNuBOqfLNrV-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-26" value="return reducer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1440" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-27" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1600" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ErUn-88AJgNuBOqfLNrV-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErUn-88AJgNuBOqfLNrV-29" value="[mapOrBuilderCallback, actionMatchers, defaultCaseReducer]" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="630" y="490" width="320" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
