@@ -32,7 +32,24 @@ function reverseList(head: ListNode | null): ListNode | null {
   return next;
 };
 
-function createListFromArray(arr: number[]) {
+function reverseRecursion(node: ListNode | null): ListNode | null {
+  if (!node) return null;
+  if (!node.next) return node;
+
+  let sub = node.next;
+  const reverseSub = reverseRecursion(sub);
+  let p = reverseSub;
+  while (p && p.next) {
+    p = p.next;
+  }
+  if (p) {
+    p.next = node;
+    node.next = null;
+  }
+  return reverseSub;
+}
+
+function createStackFromArray(arr: number[]) {
   let head: ListNode | null = null, p: ListNode;
   arr.reduce((a, b) => {
     if (head) {
@@ -48,14 +65,16 @@ function createListFromArray(arr: number[]) {
   return head;
 }
 
-function generateArrayFromNodeList(head: ListNode | null) {
+function generateArrayFromStack(head: ListNode | null) {
   let p = head;
   const res: number[] = [];
-  while(p) {
+  while (p) {
     res.push(p.val);
     p = p.next;
   }
   return res;
 }
 
-console.log(generateArrayFromNodeList(reverseList(createListFromArray([1,2,3,4,5]))));
+console.log(generateArrayFromStack(reverseList(createStackFromArray([1, 2, 3, 4, 5]))));
+console.log(generateArrayFromStack(reverseRecursion(createStackFromArray([1, 2, 3, 4, 5]))));
+
