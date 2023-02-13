@@ -1,132 +1,138 @@
-<mxfile host="app.diagrams.net" modified="2023-02-03T08:51:36.861Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="mX6c3o6FiOVaS23m_Tt7" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-09T05:58:40.028Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="XYMInZTi8bHN-DyU30KF" version="20.8.17" type="github">
   <diagram name="第 1 页" id="b--3YDLnmrPE_MdeOlID">
-    <mxGraphModel dx="1639" dy="2323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1619" dy="2323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="z5I120S_0erPX6Xemq4c-1" value="combineReducer" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-1" value="combineReducer" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="35" y="240" width="440" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-3" value="for reducekey in reducekeys; finalReducers[key] = reducers[key]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-3" value="for reducekey in reducekeys; finalReducers[key] = reducers[key]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-1" vertex="1">
           <mxGeometry x="10" y="60" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-4" value="finalReducerKeys = Object.keys(finalReducers)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-4" value="finalReducerKeys = Object.keys(finalReducers)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-1" vertex="1">
           <mxGeometry x="10" y="90" width="380" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-5" value="shapeAssertionError = assertReducerShape(finalReducers)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontColor=#FF0000;" vertex="1" parent="z5I120S_0erPX6Xemq4c-1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-5" value="shapeAssertionError = assertReducerShape(finalReducers)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontColor=#FF0000;" parent="z5I120S_0erPX6Xemq4c-1" vertex="1">
           <mxGeometry x="10" y="120" width="360" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-6" value="unexpectedKeyCache: { [key: string]： true }" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-6" value="unexpectedKeyCache: { [key: string]： true }" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-1" vertex="1">
           <mxGeometry x="10" y="150" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-7" value="return combination" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#00CCCC;fontStyle=1" vertex="1" parent="z5I120S_0erPX6Xemq4c-1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-7" value="return combination" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#00CCCC;fontStyle=1" parent="z5I120S_0erPX6Xemq4c-1" vertex="1">
           <mxGeometry x="10" y="180" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-16" value="reducerKeys = Object.keys(reducers); finalReducers = {}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-16" value="reducerKeys = Object.keys(reducers); finalReducers = {}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-1" vertex="1">
           <mxGeometry x="10" y="30" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-8" value="combineReducerProps" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-8" value="combineReducerProps" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-280" y="250" width="240" height="60" as="geometry">
             <mxRectangle x="420" y="400" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-9" value="reducers: ReducersMapObject" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-8">
+        <mxCell id="z5I120S_0erPX6Xemq4c-9" value="reducers: ReducersMapObject" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-8" vertex="1">
           <mxGeometry y="30" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5I120S_0erPX6Xemq4c-9" target="z5I120S_0erPX6Xemq4c-1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="z5I120S_0erPX6Xemq4c-9" target="z5I120S_0erPX6Xemq4c-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="10" y="210" as="sourcePoint" />
             <mxPoint x="61.68000000000001" y="290.6600000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-13" value="input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="z5I120S_0erPX6Xemq4c-12">
+        <mxCell id="z5I120S_0erPX6Xemq4c-13" value="input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z5I120S_0erPX6Xemq4c-12" vertex="1" connectable="0">
           <mxGeometry x="-0.2857" y="-1" relative="1" as="geometry">
             <mxPoint x="8" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5I120S_0erPX6Xemq4c-1" target="z5I120S_0erPX6Xemq4c-19">
+        <mxCell id="z5I120S_0erPX6Xemq4c-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="z5I120S_0erPX6Xemq4c-1" target="z5I120S_0erPX6Xemq4c-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="-17.5" as="sourcePoint" />
             <mxPoint x="330" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-15" value="return" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="z5I120S_0erPX6Xemq4c-14">
+        <mxCell id="z5I120S_0erPX6Xemq4c-15" value="return" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z5I120S_0erPX6Xemq4c-14" vertex="1" connectable="0">
           <mxGeometry x="-0.2833" relative="1" as="geometry">
             <mxPoint y="20" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-17" value="ReducersMapObject" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-17" value="ReducersMapObject" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-280" y="100" width="240" height="60" as="geometry">
             <mxRectangle x="420" y="400" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-18" value="[x: string]: Reducer;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-17">
+        <mxCell id="z5I120S_0erPX6Xemq4c-18" value="[x: string]: Reducer;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-17" vertex="1">
           <mxGeometry y="30" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-19" value="combination" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-19" value="combination" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry y="570" width="510" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-21" value="for key in finalReducerKeys;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;previousStateForKey = state[key];&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;nextStateForKey = finalReducers[key](previousStateForKey, action);&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;nextState[key] = nextStateForKey;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;hasChanged = hasChanged || nextStateForKey !== previousStateForKey;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="z5I120S_0erPX6Xemq4c-19">
+        <mxCell id="z5I120S_0erPX6Xemq4c-21" value="for key in finalReducerKeys;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;previousStateForKey = state[key];&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;nextStateForKey = finalReducers[key](previousStateForKey, action);&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;nextState[key] = nextStateForKey;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;hasChanged = hasChanged || nextStateForKey !== previousStateForKey;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;aspect=fixed;" parent="z5I120S_0erPX6Xemq4c-19" vertex="1">
           <mxGeometry x="10" y="90" width="765" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-23" value="hasChanged = hasChanged || finalReducerKeys.length !== Object.keys(state).length" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-19">
+        <mxCell id="z5I120S_0erPX6Xemq4c-23" value="hasChanged = hasChanged || finalReducerKeys.length !== Object.keys(state).length" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-19" vertex="1">
           <mxGeometry x="10" y="180" width="510" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-24" value="return hasChanged ? nextState : state" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#00CCCC;fontStyle=1" vertex="1" parent="z5I120S_0erPX6Xemq4c-19">
+        <mxCell id="z5I120S_0erPX6Xemq4c-24" value="return hasChanged ? nextState : state" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#00CCCC;fontStyle=1" parent="z5I120S_0erPX6Xemq4c-19" vertex="1">
           <mxGeometry x="10" y="210" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-25" value="if shapeAssertionError throw Error; // reducer 的返回必须符合一些要求" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontColor=#FF0000;" vertex="1" parent="z5I120S_0erPX6Xemq4c-19">
+        <mxCell id="z5I120S_0erPX6Xemq4c-25" value="if shapeAssertionError throw Error; // reducer 的返回必须符合一些要求" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontColor=#FF0000;" parent="z5I120S_0erPX6Xemq4c-19" vertex="1">
           <mxGeometry x="10" y="30" width="420" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-26" value="hasChanged = false, nextState = {};" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-19">
+        <mxCell id="z5I120S_0erPX6Xemq4c-26" value="hasChanged = false, nextState = {};" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-19" vertex="1">
           <mxGeometry x="10" y="60" width="380" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-27" value="combinationProps" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-27" value="combinationProps" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-320" y="590" width="240" height="90" as="geometry">
             <mxRectangle x="420" y="400" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-28" value="state: State;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-27">
+        <mxCell id="z5I120S_0erPX6Xemq4c-28" value="state: State;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-27" vertex="1">
           <mxGeometry y="30" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-31" value="action: Action" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-27">
+        <mxCell id="z5I120S_0erPX6Xemq4c-31" value="action: Action" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-27" vertex="1">
           <mxGeometry y="60" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="z5I120S_0erPX6Xemq4c-28" target="z5I120S_0erPX6Xemq4c-19">
+        <mxCell id="z5I120S_0erPX6Xemq4c-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="z5I120S_0erPX6Xemq4c-28" target="z5I120S_0erPX6Xemq4c-19" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-40" y="375" as="sourcePoint" />
             <mxPoint x="30" y="375" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-30" value="input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="z5I120S_0erPX6Xemq4c-29">
+        <mxCell id="z5I120S_0erPX6Xemq4c-30" value="input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z5I120S_0erPX6Xemq4c-29" vertex="1" connectable="0">
           <mxGeometry x="-0.2857" y="-1" relative="1" as="geometry">
             <mxPoint x="8" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-32" value="State" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-32" value="State" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="610" y="590" width="240" height="60" as="geometry">
             <mxRectangle x="420" y="400" width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-33" value="[x: string]: any" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-32">
+        <mxCell id="z5I120S_0erPX6Xemq4c-33" value="[x: string]: any" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-32" vertex="1">
           <mxGeometry y="30" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="z5I120S_0erPX6Xemq4c-19" target="z5I120S_0erPX6Xemq4c-33">
+        <mxCell id="z5I120S_0erPX6Xemq4c-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="z5I120S_0erPX6Xemq4c-19" target="z5I120S_0erPX6Xemq4c-33" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-70" y="645" as="sourcePoint" />
             <mxPoint x="10" y="645" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-37" value="return" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z5I120S_0erPX6Xemq4c-35">
+        <mxCell id="z5I120S_0erPX6Xemq4c-37" value="return" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="z5I120S_0erPX6Xemq4c-35" vertex="1" connectable="0">
           <mxGeometry x="-0.2911" y="2" relative="1" as="geometry">
             <mxPoint x="14" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-38" value="&lt;font color=&quot;#ff0000&quot;&gt;assertReducerShape&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="z5I120S_0erPX6Xemq4c-38" value="&lt;font color=&quot;#ff0000&quot;&gt;assertReducerShape&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="-100" y="-260" width="600" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="z5I120S_0erPX6Xemq4c-44" value="&lt;p style=&quot;line-height: 150%;&quot;&gt;for reducer in reducers;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;initialState = reducer(undefined, { type: ActionTypes.INIT });&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if initialState === undefined;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;throw Error; // state 为 undefined 时需要返回 initial state 且 initial state 不能为 undefined&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if reducer(undefined, { type: ActionTypes.PROBE_UNKNOWN_ACTION() }) === undefined;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;throw Error; // 对未知的 action 需要返回 (current state || initial state)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="z5I120S_0erPX6Xemq4c-38">
+        <mxCell id="z5I120S_0erPX6Xemq4c-44" value="&lt;p style=&quot;line-height: 150%;&quot;&gt;for reducer in reducers;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;initialState = reducer(undefined, { type: ActionTypes.INIT });&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;if initialState === undefined;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;throw Error; // state 为 undefined 时需要返回 initial state 且 initial state 不能为 undefined&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;if reducer(undefined, { type: ActionTypes.PROBE_UNKNOWN_ACTION() }) === undefined;&lt;/p&gt;&lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;throw Error; // 对未知的 action 需要返回 (current state || initial state)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="z5I120S_0erPX6Xemq4c-38" vertex="1">
           <mxGeometry x="10" y="30" width="570" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="x7tGOgritJU97XHV4_dr-2" value="介绍" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="-530" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="x7tGOgritJU97XHV4_dr-4" value="&lt;br&gt;&amp;nbsp; combineReducer 将由 state key 到 key reducer 的数据映射合并成一个 reducer 函数&lt;br&gt;&lt;br&gt;&amp;nbsp; 如果想要合并 action type 到 case reducer 的数据映射，需要调用 createReducer 函数" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="x7tGOgritJU97XHV4_dr-2">
+          <mxGeometry y="20" width="200" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
