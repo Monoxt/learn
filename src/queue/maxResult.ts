@@ -1,37 +1,19 @@
 function maxResult(nums: number[], k: number) {
-  const queue: number[] = [];
-  let sum: number = nums[0] || 0;
+  const queue: number[] = [0];
+  const dp: number[] = [nums[0]];
+
   for (let i = 1; i < nums.length; i++) {
-    if (!queue.length) {
-      queue.push(i);
-    } else if (i <= k) {
-      if (nums[i] >= nums[queue[0]]) {
-        queue.length = 0;
-      }
-      queue.push(i);
-    } else {
-      if ((i - k) === queue[0]) {
-        sum += nums[queue.shift() as number];
-      }
-      if (queue.length && nums[i] >= nums[queue[0]]) {
-        queue.length = 0;
-        queue.push(i);
-      } else if (!queue.length) {
-        queue.push(i);
-      }
+    while (queue.length && i - k > queue[0]) {
+      queue.shift();
     }
+    dp[i] = nums[i] + dp[queue[0]];
+    while(queue.length && dp[queue[queue.length - 1]] <= dp[i]) {
+      queue.pop();
+    }
+    queue.push(i);
   }
 
-  let other = -Infinity;
-
-  if (queue[0] < nums.length - 1) {
-    for (let j = queue[0] + 1; j < nums.length; j++) {
-      if (other < nums[j]) other = nums[j];
-    }
-  } else {
-    other = 0;
-  }
-  return sum + nums[queue[0]] + other;
+  return dp[nums.length - 1];
 }
 
 // console.log(maxResult([1,-1,-2,4,-7,3], 2));
