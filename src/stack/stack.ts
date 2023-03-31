@@ -21,12 +21,18 @@ class ListNode {
 function reverseList(head: ListNode | null): ListNode | null {
   let p = head;
   let prev, next = head;
+  prev = head;
   while (p && p.next) {
     // console.log('prev: ', prev, )
-    prev = next;
-    next = p.next;
-    p.next = next.next;
-    next.next = prev;
+    // prev = next;
+    // next = p.next;
+    // p.next = next.next;
+    // next.next = prev;
+
+    prev = p.next;
+    p.next = p.next?.next!;
+    prev.next = p;
+    p = p.next;
   }
   head = next;
   return next;
